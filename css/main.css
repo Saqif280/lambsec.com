@@ -106,7 +106,7 @@ html,body{
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 100;
   letter-spacing: 4px;
 }
@@ -121,7 +121,8 @@ h3{
   font-weight: 300;
 }
 h6{
-  font-size: 1rem;
+  margin-top: 0;
+  font-size: 2rem;
   font-weight: 200;
   opacity: .5;
 }
@@ -162,37 +163,25 @@ a {
 .section-hero{
   height: 100vh;
   width: 100%;
-  background: url(../img/compressed/light-hallway.jpg) no-repeat center center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8), 
+      rgba(255, 255, 255, 0.8)
+    ),
+  url(../img/compressed/light-hallway.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.hero-image{
-  /*max-width: 100%;*/
-  height: 200px;
-  /*width: 100px;*/
-/*  background: url(../img/compressed/camera.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-}
-.section-1{
-  /*background-color: #FF5216;*/
-}
-.section-1 p, .section-1 h3{
-  /*color: #fff;*/
-}
 .mod-top{
   margin-top: -200px;
 }
-/*.mod-right{
-  margin-left: 20%;
+.mod-right{
+  /*margin-left: 20%;*/
 }
 .mod-left{
-  margin-right: 20%;
-}*/
+  /*margin-right: 20%;*/
+}
 .col-discreet{
   min-height: 250px;
   background: linear-gradient(
