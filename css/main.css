@@ -113,6 +113,8 @@ h1{
 h2{ 
   font-size: 2.5rem;
   font-weight: 100;
+  opacity: 0.5;
+  text-transform: uppercase;
 }
 h3{
   font-size: 2.5rem;
@@ -127,10 +129,20 @@ p{
   font-size: 1rem;
   font-weight: 200;
   opacity: .5;
+  line-height: 30px;
 }
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+.row{
+  margin: 0;
+  padding: 0;
+}
+.row-equal{
+  display: flex; /* equal height of the children */
+  margin: 0;
+  padding: 0;
 }
 .container-fluid{
   margin: 0;
@@ -140,21 +152,103 @@ a {
   padding: 80px;
   color: #000;
 }
+.content-card{
+  margin: 60px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0 30px 0 rgba(229,232,235,0.5), 0 0 0 transparent;
+  z-index: 10;
+}
 .section-hero{
   height: 100vh;
   width: 100%;
+  background: url(../img/compressed/light-hallway.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .hero-image{
   /*max-width: 100%;*/
-  /*height: 100%;*/
-  max-width: 100%;
-  max-height: 600px;
-/*  background: url(../img/compressed/mockup.png) no-repeat center center;
+  height: 200px;
+  /*width: 100px;*/
+/*  background: url(../img/compressed/camera.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
 }
+.section-1{
+  /*background-color: #FF5216;*/
+}
+.section-1 p, .section-1 h3{
+  /*color: #fff;*/
+}
+.mod-top{
+  margin-top: -200px;
+}
+/*.mod-right{
+  margin-left: 20%;
+}
+.mod-left{
+  margin-right: 20%;
+}*/
+.col-discreet{
+  min-height: 250px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ),
+  url(../img/compressed/dark-hallway.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.col-risk{
+  min-height: 250px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ),
+  url(../img/compressed/nasa.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.col-transportation{
+  min-height: 250px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ),
+  url(../img/compressed/vehicle.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.col-contingency{
+  min-height: 250px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ),
+  url(../img/compressed/whiteboard.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.map{
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  /*max-height: 600px;*/
+}
+
+
 .footer{
   background-color: #f5f5f5;
 }
@@ -173,9 +267,9 @@ a {
   padding: 10px 15px;
   border-radius: 2px;
   display: inline-block;
-  background-color: #85D7FF;
+  background-color: #009EEB;
   font-weight: 400;
-  border: 1px solid #85D7FF;
+  border: 1px solid #009EEB;
   cursor: pointer;
   text-decoration: none;
   font-family: Roboto;
@@ -191,10 +285,15 @@ a {
 }
 .button:hover {
   color: #fff;
-  background-color: #85D7FF;
+  /*background-color: #009EEB;*/
   text-decoration: none;
   transform: translateY(-1px);
   box-shadow: 0 0 10px 0px rgba(10,10,10,0.2), 0 0 0 transparent;
+}
+
+.button-alert{
+  background-color: #FF5216;
+  border: 1px solid #FF5216;
 }
 
 
@@ -205,7 +304,11 @@ a {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
+/*.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}*/
 .center-flex{
   display: flex;
   justify-content: center;
@@ -213,6 +316,9 @@ a {
 }
 .text-center{
   text-align: center;
+}
+.text-right{
+  text-align: right;
 }
 
 
@@ -301,6 +407,34 @@ a {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+  .content{
+    padding: 30px;
+  }
+  .content-card{
+    margin: 20px;
+  }
+  .row{
+    display: block;
+  }
+  .mod-left,.mod-right{
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+  }
+  .col-discreet,.col-risk,.col-transportation,
+  .col-contingency,.map{
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+    /* Style adjustments for viewports that meet the condition */
+  .content{
+    padding: 20px;
+  }
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
