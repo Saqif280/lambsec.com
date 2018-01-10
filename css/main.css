@@ -106,7 +106,7 @@ html,body{
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 100;
   letter-spacing: 4px;
 }
@@ -431,6 +431,9 @@ hr{
   .mod-left,.mod-right{
     /*margin-left: auto;*/
     /*margin-right: auto;*/
+  }
+  .mod-top{
+    margin-top: 10px;
   }
   .col-discreet,.col-risk,.col-transportation,
   .col-contingency,.map{
