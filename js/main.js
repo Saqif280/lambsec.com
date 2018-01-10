@@ -1,3 +1,4 @@
+// slide to id
 $("a[href^='#']").click(function(e) {
 	e.preventDefault();
 	
@@ -6,4 +7,12 @@ $("a[href^='#']").click(function(e) {
 	$("body, html").animate({
 		scrollTop: position
 	} /* speed */ );
+});
+
+// switch language
+$('[lang="es"]').hide();
+
+$('.switch-lang').click(function() {
+  $('[lang="es"]').toggle();
+  $('[lang="en"]').toggle();
 });

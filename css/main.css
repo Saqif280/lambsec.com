@@ -129,12 +129,21 @@ h6{
 p{
   font-size: 1rem;
   font-weight: 200;
-  opacity: .5;
+  opacity: .7;
   line-height: 30px;
 }
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+hr{
+  border: 0;
+  color: #000;
+  background-color: #000;
+  height: 1px;
+  opacity: 0.1;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .row{
   margin: 0;
@@ -232,9 +241,10 @@ a {
 }
 .map{
   width: 100%;
-  max-width: 600px;
+  /*max-width: 600px;*/
   height: 100%;
-  /*max-height: 600px;*/
+  min-height: 400px;
+  max-height: 600px;
 }
 
 
@@ -284,6 +294,16 @@ a {
   background-color: #FF5216;
   border: 1px solid #FF5216;
 }
+
+.button-light{
+  background-color: #F9FAFC;
+  border: 1px solid #F9FAFC;
+  color: #222;
+}
+.button-light:visited,.button-light:hover{
+  color: #222;
+}
+
 
 
 
