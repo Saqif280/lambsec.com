@@ -126,7 +126,7 @@ h6{
   font-weight: 200;
   opacity: .5;
 }
-p{
+li,p{
   font-size: 1rem;
   font-weight: 200;
   opacity: .9;
