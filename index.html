@@ -301,8 +301,16 @@
           <br>
           </p>
         </div>
-        <div class="col-md-12 col-sm-12">
-          <br>
+        <div class="col-md-12 col-sm-12 text-right">
+          <h3>
+            <span lang="en">Our locations</span>
+            <span lang="es">Nuestras ubicaciones</span>
+          </h3>
+          <p>
+            <span lang="en">We have corporate offices all over the world</span>
+            <span lang="es">Tenemos oficinas corporativas en todo el mundo</span>
+          </p>
+          <hr>
           <!-- <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1RYgWLU4TddDGb9J7jjfuk7EK7hhqmIxH&hl=en"></iframe> -->
           <div id="map" class="map">
           </div>
@@ -619,7 +627,7 @@
               for (i = 0; i < locations.length; i++) { 
                 marker = new google.maps.Marker({
                   position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                  // icon: customMarker,
+                  icon: "img/dot.png",
                   map: map
                 });
 
