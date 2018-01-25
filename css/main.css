@@ -106,15 +106,21 @@ html,body{
 }
 
 h1{
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 100;
   letter-spacing: 4px;
+  /*opacity: 0.1;*/
 }
 h2{ 
   font-size: 2.5rem;
   font-weight: 100;
   opacity: 0.5;
   text-transform: uppercase;
+
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  opacity: 0.1;
 }
 h3{
   font-size: 2.5rem;
@@ -182,6 +188,10 @@ hr{
   -o-background-size: cover;
   background-size: cover;
 }
+.section-hero_services{
+}
+.section-contact{
+}
 .mod-top{
   margin-top: -200px;
 }
@@ -209,7 +219,7 @@ hr{
       rgba(0, 0, 0, 0), 
       rgba(0, 0, 0, 0)
     ),
-  url(../img/compressed/nasa.jpg) no-repeat center center;
+  url(../img/raw/analytics.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -221,7 +231,7 @@ hr{
       rgba(0, 0, 0, 0), 
       rgba(0, 0, 0, 0)
     ),
-  url(../img/compressed/vehicle.jpg) no-repeat center center;
+  url(../img/raw/18w1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -234,6 +244,30 @@ hr{
       rgba(0, 0, 0, 0)
     ),
   url(../img/compressed/whiteboard.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.col-investigation{
+  min-height: 250px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ),
+  url(../img/raw/team3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.col-training{
+  min-height: 250px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ),
+  url(../img/raw/team1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -257,6 +291,40 @@ hr{
   font-size: 12px;
 }
 
+
+
+
+
+/* NAVBAR STYLES */
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: transparent;*/
+  opacity: 0.5;
+  /*border-bottom: 1px solid #777;*/
+}
+.navbar li {
+  float: right;
+  font-weight: 400;
+}
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #fff;
+}
 
 
 
@@ -330,6 +398,9 @@ hr{
 }
 .text-right{
   text-align: right;
+}
+.float-left{
+  float: left !important;
 }
 
 
