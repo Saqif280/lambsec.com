@@ -135,7 +135,7 @@ h6{
 li,p{
   font-size: 1rem;
   font-weight: 200;
-  opacity: .9;
+  opacity: 1;
   line-height: 30px;
 }
 a {
