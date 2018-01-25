@@ -151,6 +151,47 @@ hr{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+
+/* animations */
+.animate-opacity-fade-1 {
+  -webkit-animation: opacity-fade-1 2s ease-in-out 1 normal;
+  -moz-animation: opacity-fade-1 2s ease-in-out 1 normal;
+  -o-animation: opacity-fade-1 2s ease-in-out 1 normal;
+  animation: opacity-fade-1 2s ease-in-out 1 normal; 
+}
+@keyframes opacity-fade-1 {
+  0% {
+    opacity: 0;
+  }
+  30%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1.0;
+  } 
+}
+.animate-opacity-fade-2 {
+  -webkit-animation: opacity-fade-2 2s ease-in-out 1 normal;
+  -moz-animation: opacity-fade-2 2s ease-in-out 1 normal;
+  -o-animation: opacity-fade-2 2s ease-in-out 1 normal;
+  animation: opacity-fade-2 2s ease-in-out 1 normal; 
+}
+@keyframes opacity-fade-2 {
+  0% {
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  } 
+}
+
+
+
+
 .row{
   margin: 0;
   padding: 0;
