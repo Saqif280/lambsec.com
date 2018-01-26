@@ -373,9 +373,9 @@ hr{
   width: 70px;
   padding: 10px;
 }
-
-
-
+.switch-lang{
+  cursor: pointer;
+}
 
 
 

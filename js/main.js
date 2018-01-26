@@ -10,11 +10,25 @@ $("a[href^='#']").click(function(e) {
 });
 
 // switch language
-$('[lang="es"]').hide();
+if(localStorage.lang == null){
+  localStorage.lang = "en";
+  $('[lang="es"]').hide();
+} else if (localStorage.lang == "en"){
+  $('[lang="es"]').hide();
+} else {
+  $('[lang="en"]').hide();
+}
 
 $('.switch-lang').click(function() {
   $('[lang="es"]').toggle();
   $('[lang="en"]').toggle();
+  if(localStorage.lang == "en"){
+    localStorage.setItem("lang","es");
+    console.log("switch to spanish");
+  } else {
+    localStorage.setItem("lang","en");
+    console.log("switch to english");
+  }
 });
 
 // NAVBAR ANIMATIONS
