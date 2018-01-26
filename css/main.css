@@ -369,6 +369,10 @@ hr{
 .navbar .active{
   background-color: #fff;
 }
+.logo{
+  width: 70px;
+  padding: 10px;
+}
 
 
 
