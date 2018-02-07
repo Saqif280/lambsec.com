@@ -104,7 +104,7 @@
           USA: (321) 821-2272<br>
           Office: (502) 6685-3620<br>
           Office 2: (502) 5204-5479<br>
-          Office 3: (502) 5632-8542<br>
+          Office 3: (502) 5208-2901<br>
           </span>
           <span lang="es">
           Oficina Estados Unidos: (321) 821-2272<br>
@@ -186,7 +186,10 @@
                 ['China', 35.86166, 104.19539, 0],
                 ['Philippines', 12.87972, 121.77401, 0],
                 ['Australia', -25.27439, 133.77513, 0],
-                ['New Zealand', -40.90055, 174.88597, 0]
+                ['New Zealand', -40.90055, 174.88597, 0],
+                ['Libya', 26.0769085, 8.299395, 0],
+                ['Tanzania', 6.3690268, 34.8538022, 0],
+                ['South Africa', 30.5594633, 22.8674652, 0]
               ];
 
               var map = new google.maps.Map(document.getElementById('map'), {
@@ -450,7 +453,7 @@
 
               var marker, i;
 
-              for (i = 0; i < locations.length; i++) { 
+              for (i = 0; i < locations.length; i++) {
                 marker = new google.maps.Marker({
                   position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                   icon: "img/dot.png",
